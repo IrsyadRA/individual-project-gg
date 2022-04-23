@@ -208,7 +208,11 @@ const CreatePlaylist = () => {
         const profile = await fetch(`https://api.spotify.com/v1/me`, {
             headers: headers
         }).then(response => response.json());
-        setUserProfile({id: profile.id, name: profile.display_name, image: profile.images[0].url});
+        if(profile.images[0]){
+            setUserProfile({id: profile.id, name: profile.display_name, image: profile.images[0].url});
+        }else{
+            setUserProfile({id: profile.id, name: profile.display_name, image: '/icons8-test-account-96.png'});
+        }
     }
     /* Create Playlist */
     const createPlaylistReq = () => {
