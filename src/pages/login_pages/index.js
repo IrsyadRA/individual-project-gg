@@ -29,7 +29,7 @@ img{
 const LoginPage = () => {
     const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID
     const SPOTIFY_AUTHORIZE_ENDPOINT = 'https://accounts.spotify.com/authorize'
-    const REDIRECT_URL_AFTER_LOGIN = 'https://individual-project-gg.vercel.app/create-playlist' /* set this to 'http://localhost:3000/create-playlist' if you want to run it on local*/
+    const REDIRECT_URL_AFTER_LOGIN = 'http://localhost:3000/create-playlist' /* set this to 'http://localhost:3000/create-playlist' if you want to run it on local*/
     const SPACE_DELIMITER = "%20";
     const SCOPE = ['playlist-modify-private', 'user-read-private']
     const SCOPE_URL = SCOPE.join(SPACE_DELIMITER);
