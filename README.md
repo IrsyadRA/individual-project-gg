@@ -4,7 +4,7 @@ My final project submission for GenerasiGIGIH. This app consume Spotify API to c
 
 ## Screenshots
 
-<center><img src="./ss_page.png" alt="Preview Image" /></center>
+![Cover spotify](https://user-images.githubusercontent.com/100647847/181907866-9bb84db8-41df-4889-928a-7c21bd15690f.png)
 
 ## Features
 
